@@ -1,0 +1,113 @@
+@media screen and (min-width: 901px) and (max-width: 3840px) {
+    .leaderContainer {
+        display: flex;
+        align-items: center;
+        padding: 100px 120px;
+        gap: 32px;
+    }
+
+    .imgLeaderDesktop {
+        width: 50%;
+        position: relative;
+    }
+
+    .textLeader {
+        position: absolute;
+        background-color: var(--White);
+        width: 120%;
+        bottom: 0;
+        left: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+        padding: 64px 32px;
+    }
+
+    .textLeader h2 {
+        text-transform: uppercase;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 300;
+        color: var(--Black);
+        font-size: 42px;
+        width: 50%;
+        min-width: 400px;
+    }
+
+    .textLeader p {
+        font-family: "Alata", sans-serif;
+        color: var(--Gray);
+        font-size: 15px;
+        width: 70%;
+        min-width: 400px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .textLeader {
+        padding: 32px 24px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .textLeader {
+        padding: 24px 48px;
+    }
+
+    .textLeader h2 {
+        font-size: 24px;
+        min-width: 300px;
+    }
+
+    .textLeader p {
+        font-size: 13px;
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .leaderContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 100px 16px;
+        gap: 32px;
+    }
+
+    .imgLeaderMobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .textLeader {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .textLeader h2 {
+        text-transform: uppercase;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 300;
+        color: var(--Black);
+        font-size: 36px;
+        width: 100%;
+        min-width: 300px;
+    }
+
+    .textLeader p {
+        font-family: "Alata", sans-serif;
+        color: var(--Gray);
+        font-size: 15px;
+        width: 100%;
+        min-width: 300px;
+    }
+}

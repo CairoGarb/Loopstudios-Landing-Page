@@ -1,0 +1,247 @@
+/* Larger screen sizes */
+@media screen and (min-width: 901px) and (max-width: 3840px) {
+    .headerContainer {
+        background-image: url(/desktop/image-hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 80vh;
+        position: relative;
+    }
+
+    .headerContainer::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background-color: var(--Black);
+        opacity: .3;
+    }
+
+    .logo {
+        width: 15%;
+        z-index: 1;
+    }
+
+    /* Menu */
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        padding: 36px 120px;
+        z-index: 1;
+    }
+
+    /* Menu Bar */
+
+    .menuBar {
+        display: none;
+    }
+
+    .menuOptions {
+        display: flex;
+    }
+
+    .menuOptions ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        color: var(--White);
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        gap: 24px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .menuOptions ul li {
+        display: inline;
+        padding-bottom: 6px;
+    }
+
+    .menuOptions .option:hover {
+        cursor: pointer;
+        border-bottom: 2px solid var(--White);
+        padding-bottom: 4px;
+
+    }
+
+    /* Menu Bar */
+
+    /* Menu */
+
+    /* Main Text */
+
+    .text {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 120px;
+        margin-top: -72px;
+    }
+
+    .mainText {
+        background: transparent;
+        border: 2px solid var(--White);
+        display: flex;
+        width: 100%;
+        padding: 30px;
+        z-index: 1;
+    }
+
+    .mainText h1 {
+        color: var(--White);
+        text-transform: uppercase;
+        font-family: "Josefin Sans", sans-serif;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 72px;
+    }
+
+    /* Main Text */
+}
+
+@media screen and (max-width: 1300px) {
+    .mainText h1 {
+        font-size: 56px;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .mainText h1 {
+        font-size: 42px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .mainText h1 {
+        font-size: 32px;
+    }
+}
+
+/* Tablets and mobiles */
+@media screen and (max-width: 900px) {
+    .headerContainer {
+        background-image: url(/mobile/image-hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 80vh;
+    }
+
+    .logo {
+        z-index: 1;
+        width: 30%;
+    }
+
+    /* Menu */
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        padding: 24px 16px;
+    }
+
+    /* Menu Bar */
+
+    .menuBar i {
+        width: 16px;
+        scale: 1.5;
+        color: var(--White);
+    }
+
+    .menuBar i:hover {
+        cursor: pointer;
+        transition: .2s;
+    }
+
+    .menuOptions {
+        position: absolute;
+        background-color: var(--Black);
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        display: none;
+        padding: 0 24px;
+    }
+
+    .menuOptions.active {
+        display: block;
+    }
+
+    .menuOptions ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style-type: none;
+        color: var(--White);
+        font-family: "Josefin Sans", sans-serif;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 24px;
+        gap: 24px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .menuOptions ul li {
+        display: inline;
+        padding-bottom: 5px;
+    }
+
+    .menuOptions .option:hover {
+        cursor: pointer;
+        border-bottom: 2px solid var(--White);
+        width: 20%;
+        padding-bottom: 4px;
+    }
+
+    /* Menu Bar */
+
+    /* Menu */
+
+    /* Main Text */
+
+    .text {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+    }
+
+    .mainText {
+        background: transparent;
+        border: 2px solid var(--White);
+        width: 100%;
+        display: flex;
+        padding: 16px;
+        margin-top: -120px;
+    }
+
+    .mainText h1 {
+        color: var(--White);
+        text-transform: uppercase;
+        font-family: "Josefin Sans", sans-serif;
+        text-transform: uppercase;
+        font-weight: 300;
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    /* Main Text */
+}

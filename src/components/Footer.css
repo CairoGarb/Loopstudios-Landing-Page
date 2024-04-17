@@ -1,0 +1,132 @@
+@media screen and (min-width: 901px) and (max-width: 3840px) {
+    .footerContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        background-color: var(--Black);
+        color: var(--White);
+        padding: 32px 120px;
+        font-family: "Josefin Sans", sans-serif;
+    }
+
+    .logoFooter {
+        width: 30%;
+        grid-column: 1/2;
+    }
+
+    .optionsFooter {
+        grid-column: 1/2;
+        grid-row: 2/4;
+    }
+
+    .optionsFooter ul {
+        list-style-type: none;
+        display: flex;
+        gap: 32px;
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    .optionsFooter ul li {
+        display: inline;
+        padding-bottom: 5px;
+    }
+
+    .optionsFooter ul li:hover {
+        cursor: pointer;
+        border-bottom: 2px solid var(--White);
+    }
+
+    .socialMedia {
+        display: flex;
+        gap: 16px;
+        width: 100%;
+        align-items: center;
+        grid-column: 2/3;
+        justify-content: end;
+    }
+
+    .socialMedia i {
+        display: inline;
+    }
+
+    .socialMedia i:hover {
+        cursor: pointer;
+        border-bottom: 2px solid var(--White);
+        padding-bottom: 4px;
+    }
+
+    .copy {
+        color: var(--Gray);
+        font-size: 12px;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .footerContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        background-color: var(--Black);
+        color: var(--White);
+        padding: 32px 16px;
+        font-family: "Josefin Sans", sans-serif;
+    }
+
+    .logoFooter {
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .optionsFooter {
+        width: 100%;
+    }
+
+    .optionsFooter ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 12px;
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    .optionsFooter ul li {
+        display: inline;
+        padding-bottom: 5px;
+    }
+
+    .optionsFooter ul li:hover {
+        cursor: pointer;
+        border-bottom: 2px solid var(--White);
+        padding-bottom: 4px;
+    }
+
+    .socialMedia {
+        display: flex;
+        margin: 0 auto;
+        gap: 16px;
+        width: 30%;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .socialMedia i {
+        display: inline;
+    }
+
+    .socialMedia i:hover {
+        cursor: pointer;
+        border-bottom: 2px solid var(--White);
+        padding-bottom: 4px;
+    }
+
+    .copy {
+        text-align: center;
+        color: var(--Gray);
+        font-size: 12px;
+    }
+}
